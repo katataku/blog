@@ -6,8 +6,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 11 Jul 2020 23:49:00 +0900</lastBuildDate>
+        <lastBuildDate>Sun, 12 Jul 2020 00:45:56 +0900</lastBuildDate>
         <atom:link href="http://katataku.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>hugoで利用するスクリプトを作成した</title>
+            <link>http://katataku.github.io/blog/posts/hugo-scripts/</link>
+            <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
+            
+            <guid>http://katataku.github.io/blog/posts/hugo-scripts/</guid>
+            <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
+local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
+deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。</description>
+            <content type="html"><![CDATA[<p>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。</p>
+<h2 id="local-deploy">local deploy</h2>
+<pre><code>hugo;
+hugo server -D 
+</code></pre><p>こちらは単純。
+コンテンツを生成し、ローカル確認するためにサーバ を起動する。</p>
+<h2 id="deploy">deploy</h2>
+<pre><code>#!/bin/sh
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+hugo
+
+git add docs/
+
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+git push origin master
+</code></pre><p><a href="https://qiita.com/KoKeCross/items/2b24908f60d235bcc49f">こちら</a>を参考に作成した。</p>
+]]></content>
+        </item>
         
         <item>
             <title>First Article</title>
