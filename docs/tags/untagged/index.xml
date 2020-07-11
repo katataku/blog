@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>untagged on Hello Friend NG</title>
+    <link>http://katataku.github.io/blog/tags/untagged/</link>
+    <description>Recent content in untagged on Hello Friend NG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>jp-JP</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 11 Jul 2020 23:49:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://katataku.github.io/blog/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Article</title>
+      <link>http://katataku.github.io/blog/posts/first-article/</link>
+      <pubDate>Sat, 11 Jul 2020 23:49:00 +0900</pubDate>
+      
+      <guid>http://katataku.github.io/blog/posts/first-article/</guid>
+      <description>はじめての記事</description>
+    </item>
+    
+  </channel>
+</rss>
