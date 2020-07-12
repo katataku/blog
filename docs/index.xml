@@ -6,7 +6,6 @@
     <description>Recent content on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 12 Jul 2020 00:45:56 +0900</lastBuildDate>
     
 	<atom:link href="http://katataku.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -29,7 +28,9 @@ deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[
       <pubDate>Sat, 11 Jul 2020 23:50:05 +0900</pubDate>
       
       <guid>http://katataku.github.io/blog/about/</guid>
-      <description>自己紹介ページ</description>
+      <description>情報システム学専攻在学時ソフトウェアの数学的検証ツールを開発（奨学金返還免除）。
+大手SIerに新卒入社し金融部門を担当。 最年少でプロジェクトマネージャを経験。
+個人投資家としてFX、投資信託を活用し資産運用中。 第一種証券外務員、高度情報処理技術者の資格多数保有。</description>
     </item>
     
     <item>
