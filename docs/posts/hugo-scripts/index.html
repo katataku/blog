@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。" />
+local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
+hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
+#!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。" />
 <meta name="keywords" content=", hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -36,11 +37,12 @@ deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[
 
 <meta itemprop="name" content="hugoで利用するスクリプトを作成した">
 <meta itemprop="description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。">
+local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
+hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
+#!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。">
 <meta itemprop="datePublished" content="2020-07-12T00:45:56&#43;09:00" />
 <meta itemprop="dateModified" content="2020-07-12T00:45:56&#43;09:00" />
-<meta itemprop="wordCount" content="44">
+<meta itemprop="wordCount" content="46">
 <meta itemprop="image" content="http://katataku.github.io/blog"/>
 
 
@@ -51,15 +53,17 @@ deploy #!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&q
 
 <meta name="twitter:title" content="hugoで利用するスクリプトを作成した"/>
 <meta name="twitter:description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。"/>
+local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
+hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
+#!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。"/>
 
 
 
     <meta property="og:title" content="hugoで利用するスクリプトを作成した" />
 <meta property="og:description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。" />
+local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
+hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
+#!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; hugo git add docs/ msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push origin master こちらを参考に作成した。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://katataku.github.io/blog/posts/hugo-scripts/" />
 <meta property="og:image" content="http://katataku.github.io/blog"/>
@@ -153,11 +157,13 @@ deploy #!/bin/sh echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&q
       <div class="post-content">
         <p>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。</p>
 <h2 id="local-deploy">local deploy</h2>
+<p>コンテンツを生成し、ローカル確認するためにサーバ を起動する。
+こちらは単純。</p>
 <pre><code>hugo;
 hugo server -D 
-</code></pre><p>こちらは単純。
-コンテンツを生成し、ローカル確認するためにサーバ を起動する。</p>
-<h2 id="deploy">deploy</h2>
+</code></pre><h2 id="deploy">deploy</h2>
+<p>確認した結果を、githubリポジトリにpushするためのスクリプト。
+全体の整合性を担保するために、リコンパイルを実施している。</p>
 <pre><code>#!/bin/sh
 
 echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
@@ -196,7 +202,7 @@ git push origin master
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        44 Words
+        46 Words
       </p>
 
       <p>

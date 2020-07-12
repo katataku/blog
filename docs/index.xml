@@ -36,8 +36,9 @@ S3のコスト最適化 こちらも同じ。IAとかが最後まで頭の中で
       
       <guid>http://katataku.github.io/blog/posts/hugo-scripts/</guid>
       <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。</description>
+local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
+hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
+#!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。</description>
     </item>
     
     <item>
