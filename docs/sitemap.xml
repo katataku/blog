@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://katataku.github.io/blog/tags/aws/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://katataku.github.io/blog/posts/aws-ssa/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://katataku.github.io/blog/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://katataku.github.io/blog/posts/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://katataku.github.io/blog/tags/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://katataku.github.io/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://katataku.github.io/blog/tags/hugo/</loc>
     <lastmod>2020-07-12T00:45:56+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://katataku.github.io/blog/posts/hugo-scripts/</loc>
-    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://katataku.github.io/blog/</loc>
-    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://katataku.github.io/blog/posts/</loc>
-    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://katataku.github.io/blog/tags/</loc>
     <lastmod>2020-07-12T00:45:56+09:00</lastmod>
   </url>
   

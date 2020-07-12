@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>katataku&#39;s blog</title>
-    <link>http://katataku.github.io/blog/</link>
-    <description>Recent content on katataku&#39;s blog</description>
+    <title>受験記 on katataku&#39;s blog</title>
+    <link>http://katataku.github.io/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</link>
+    <description>Recent content in 受験記 on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 23:45:31 +0900</lastBuildDate>
     
-	<atom:link href="http://katataku.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://katataku.github.io/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,37 +27,6 @@
 IAM ユーザ、ロール、ポリシーがごっちゃになった。 さらに（AWS）アカウントという用語もあり、整理が必要。 実際に触っているとすぐ腹落ちした。
 EC2のコスト最適化 EC2のスポットインスタンス、RIやsaving plansなどが最後まで混乱していた。 自腹で実機を触っていれば感覚が違ったかも？
 S3のコスト最適化 こちらも同じ。IAとかが最後まで頭の中でごっちゃになっていた。 上記EC2とまとめて、直前にまとめて整理すると理解できた。</description>
-    </item>
-    
-    <item>
-      <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://katataku.github.io/blog/posts/hugo-scripts/</link>
-      <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
-      
-      <guid>http://katataku.github.io/blog/posts/hugo-scripts/</guid>
-      <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy hugo; hugo server -D こちらは単純。 コンテンツを生成し、ローカル確認するためにサーバ を起動する。
-deploy #!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://katataku.github.io/blog/about/</link>
-      <pubDate>Sat, 11 Jul 2020 23:50:05 +0900</pubDate>
-      
-      <guid>http://katataku.github.io/blog/about/</guid>
-      <description>情報システム学専攻在学時ソフトウェアの数学的検証ツールを開発（奨学金返還免除）。
-大手SIerに新卒入社し金融部門を担当。 最年少でプロジェクトマネージャを経験。
-個人投資家としてFX、投資信託を活用し資産運用中。 第一種証券外務員、高度情報処理技術者の資格多数保有。</description>
-    </item>
-    
-    <item>
-      <title>First Article</title>
-      <link>http://katataku.github.io/blog/posts/first-article/</link>
-      <pubDate>Sat, 11 Jul 2020 23:49:00 +0900</pubDate>
-      
-      <guid>http://katataku.github.io/blog/posts/first-article/</guid>
-      <description>はじめての記事</description>
     </item>
     
   </channel>
