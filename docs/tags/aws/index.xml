@@ -2,31 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on katataku&#39;s blog</title>
-    <link>http://katataku.github.io/blog/tags/aws/</link>
+    <link>http://www.katataku.dev/tags/aws/</link>
     <description>Recent content in AWS on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 23:45:31 +0900</lastBuildDate>
     
-	<atom:link href="http://katataku.github.io/blog/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS SAA受験記</title>
-      <link>http://katataku.github.io/blog/posts/aws-ssa/</link>
+      <link>http://www.katataku.dev/posts/aws-ssa/</link>
       <pubDate>Sun, 12 Jul 2020 23:45:31 +0900</pubDate>
       
-      <guid>http://katataku.github.io/blog/posts/aws-ssa/</guid>
-      <description>AWS 認定　Solution Architect associateに合格したので勉強したポイントを記録する。
-インプット学習 まずは、有名な黒本をメルカリで購入した。正直あまり読んでない。
-ひたすら、black belt Online セミナーをyoutubeで見ていた。 腹落ちしてない分野は2回、３回と繰り返し確認。
-アウトプット学習 udemyの試験対策講座を受講した。 「問題を解く」→「間違った分野のblackbeltセミナーや公式documentを見返す」ということを繰り返す。（2-3テスト分）
-申し込み前には、公式の模試を受験した。8割取れてたので、申し込みを決意。
-試験当日 自宅から最寄りの試験会場を選択した。 試験開始1.5時間前には同じビルのスタバに入って最後の追い込みをした。 復習のつもりでよくある質問を読み返していたら、初めて知る知識もあって少しあせった。
-つまづきポイント 自分がつまずいたポイントは以下の通り。
-IAM ユーザ、ロール、ポリシーがごっちゃになった。 さらに（AWS）アカウントという用語もあり、整理が必要。 実際に触っているとすぐ腹落ちした。
-EC2のコスト最適化 EC2のスポットインスタンス、RIやsaving plansなどが最後まで混乱していた。 自腹で実機を触っていれば感覚が違ったかも？
-S3のコスト最適化 こちらも同じ。IAとかが最後まで頭の中でごっちゃになっていた。 上記EC2とまとめて、直前にまとめて整理すると理解できた。</description>
+      <guid>http://www.katataku.dev/posts/aws-ssa/</guid>
+      <description>AWS 認定 Solution Architect associateに合格したので勉強したポイントを記録する。 インプット学習 まずは、有名な黒本をメルカリで購入した。正直あまり読んで</description>
     </item>
     
   </channel>

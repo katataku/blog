@@ -2,25 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on katataku&#39;s blog</title>
-    <link>http://katataku.github.io/blog/tags/hugo/</link>
+    <link>http://www.katataku.dev/tags/hugo/</link>
     <description>Recent content in hugo on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 00:45:56 +0900</lastBuildDate>
     
-	<atom:link href="http://katataku.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://katataku.github.io/blog/posts/hugo-scripts/</link>
+      <link>http://www.katataku.dev/posts/hugo-scripts/</link>
       <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
       
-      <guid>http://katataku.github.io/blog/posts/hugo-scripts/</guid>
-      <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。
-local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動する。 こちらは単純。
-hugo; hugo server -D deploy 確認した結果を、githubリポジトリにpushするためのスクリプト。 全体の整合性を担保するために、リコンパイルを実施している。
-#!/bin/sh echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; hugo git add docs/ msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push origin master こちらを参考に作成した。</description>
+      <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
+      <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
     </item>
     
   </channel>
