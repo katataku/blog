@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/blog/tags/hugo/</link>
+    <link>http://www.katataku.dev/tags/hugo/</link>
     <description>Recent content in hugo on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 00:45:56 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://www.katataku.dev/blog/posts/hugo-scripts/</link>
+      <link>http://www.katataku.dev/posts/hugo-scripts/</link>
       <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/blog/posts/hugo-scripts/</guid>
+      <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
       <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
     </item>
     

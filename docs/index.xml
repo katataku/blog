@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/blog/</link>
+    <link>http://www.katataku.dev/</link>
     <description>Recent content on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 23:45:31 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS SAA受験記</title>
-      <link>http://www.katataku.dev/blog/posts/aws-ssa/</link>
+      <link>http://www.katataku.dev/posts/aws-ssa/</link>
       <pubDate>Sun, 12 Jul 2020 23:45:31 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/blog/posts/aws-ssa/</guid>
+      <guid>http://www.katataku.dev/posts/aws-ssa/</guid>
       <description>AWS 認定 Solution Architect associateに合格したので勉強したポイントを記録する。 インプット学習 まずは、有名な黒本をメルカリで購入した。正直あまり読んで</description>
     </item>
     
     <item>
       <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://www.katataku.dev/blog/posts/hugo-scripts/</link>
+      <link>http://www.katataku.dev/posts/hugo-scripts/</link>
       <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/blog/posts/hugo-scripts/</guid>
+      <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
       <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://www.katataku.dev/blog/about/</link>
+      <link>http://www.katataku.dev/about/</link>
       <pubDate>Sat, 11 Jul 2020 23:50:05 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/blog/about/</guid>
+      <guid>http://www.katataku.dev/about/</guid>
       <description>情報システム学専攻在学時ソフトウェアの数学的検証ツールを開発（奨学金返還免除）。 大手SIerに新卒入社し金融部門を担当。 最年少でプロジェクト</description>
     </item>
     
     <item>
       <title>First Article</title>
-      <link>http://www.katataku.dev/blog/posts/first-article/</link>
+      <link>http://www.katataku.dev/posts/first-article/</link>
       <pubDate>Sat, 11 Jul 2020 23:49:00 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/blog/posts/first-article/</guid>
+      <guid>http://www.katataku.dev/posts/first-article/</guid>
       <description>はじめての記事</description>
     </item>
     
