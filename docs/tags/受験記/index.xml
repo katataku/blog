@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>受験記 on katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</link>
+    <link>http://www.katataku.dev/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</link>
     <description>Recent content in 受験記 on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sun, 12 Jul 2020 23:45:31 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/tags/%E5%8F%97%E9%A8%93%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS SAA受験記</title>
-      <link>http://www.katataku.dev/posts/aws-ssa/</link>
+      <link>http://www.katataku.dev/blog/posts/aws-ssa/</link>
       <pubDate>Sun, 12 Jul 2020 23:45:31 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/posts/aws-ssa/</guid>
+      <guid>http://www.katataku.dev/blog/posts/aws-ssa/</guid>
       <description>AWS 認定 Solution Architect associateに合格したので勉強したポイントを記録する。 インプット学習 まずは、有名な黒本をメルカリで購入した。正直あまり読んで</description>
     </item>
     

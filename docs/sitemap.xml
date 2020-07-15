@@ -3,66 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.katataku.dev/tags/aws/</loc>
+    <loc>http://www.katataku.dev/blog/tags/aws/</loc>
     <lastmod>2020-07-12T23:45:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.katataku.dev/posts/aws-ssa/</loc>
+    <loc>http://www.katataku.dev/blog/posts/aws-ssa/</loc>
     <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/</loc>
-    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/posts/</loc>
-    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/tags/</loc>
-    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</loc>
-    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/tags/hugo/</loc>
-    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/posts/hugo-scripts/</loc>
-    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/about/</loc>
-    <lastmod>2020-07-11T23:50:05+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/posts/first-article/</loc>
-    <lastmod>2020-07-11T23:49:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.katataku.dev/tags/untagged/</loc>
-    <lastmod>2020-07-11T23:49:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.katataku.dev/blog/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.katataku.dev/series/</loc>
+    <loc>http://www.katataku.dev/blog/posts/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/tags/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/tags/%E5%8F%97%E9%A8%93%E8%A8%98/</loc>
+    <lastmod>2020-07-12T23:45:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/tags/hugo/</loc>
+    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/posts/hugo-scripts/</loc>
+    <lastmod>2020-07-12T00:45:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/about/</loc>
+    <lastmod>2020-07-11T23:50:05+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/posts/first-article/</loc>
+    <lastmod>2020-07-11T23:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/tags/untagged/</loc>
+    <lastmod>2020-07-11T23:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.katataku.dev/blog/series/</loc>
   </url>
   
 </urlset>
