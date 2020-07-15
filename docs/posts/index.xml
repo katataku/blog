@@ -5,15 +5,53 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Sun, 12 Jul 2020 23:45:31 +0900</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jul 2020 22:18:40 +0900</lastBuildDate>
         <atom:link href="http://www.katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>初めてRFC読んでみた その１</title>
+            <link>http://www.katataku.dev/posts/2020/rfc6749-1/</link>
+            <pubDate>Wed, 15 Jul 2020 22:18:40 +0900</pubDate>
+            
+            <guid>http://www.katataku.dev/posts/2020/rfc6749-1/</guid>
+            <description>はじめに 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の入門書</description>
+            <content type="html"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<p>業務でAPI GWの認証認可部分を担当することになった。
+引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、
+「世の中の入門書は中級者向けだから、RFC読めばいいよ」という、ありがたいお言葉をいただいた。</p>
+<p>そこで、はじめてRFCを読むわけだが、
+人目見ただけで分量に嫌気が差した。</p>
+<p>世の中には簡単に説明している記事はあるが、読みたいのはあくまでRFC。
+そこで、あくまでRFCの記載内容にしたがって、簡単に要約してみる。</p>
+<p>今回は<a href="https://openid-foundation-japan.github.io/rfc6749.ja.html">RFC6749</a>を読むことにする。
+なお、実装にあたっては厳密性が重要になるため、原文（もちろん英語版）で理解することが前提とのこと。</p>
+<h2 id="1はじめに">1.はじめに</h2>
+<p>要約と言いつつ、さっそく銀行と通帳アプリで例えることにする。</p>
+<p>通帳アプリに銀行のパスワード教えるのはいまいちだよね。
+なぜなら</p>
+<ul>
+<li>通帳アプリが利用者本人と全く同じ権限使えるよね。</li>
+<li>利用者が通帳アプリを複数使っていた場合、アプリごとに利用を停止できない。パスワード変更すれば停止できるけど、全部利用止まっちゃうよね。</li>
+<li>通帳アプリの情報漏洩が問題だよね。
+という理由。</li>
+</ul>
+<p>そこで、権限移譲用の別のトークンを用意しよう！</p>
+<h3 id="11登場人物">1.1登場人物</h3>
+<ul>
+<li>リソースオーナー：通帳アプリの利用者（個人情報のオーナーってイメージ）</li>
+<li>リソースサーバ：銀行のサーバ。</li>
+<li>クライアント：通帳アプリ</li>
+<li>認可サーバ ：通帳アプリにトークンを発行するサーバ 。銀行のサーバ と同じでもいいし、違うかもしれない。</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
             <title>AWS SAA受験記</title>
-            <link>http://www.katataku.dev/posts/aws-ssa/</link>
+            <link>http://www.katataku.dev/posts/2020/aws-ssa/</link>
             <pubDate>Sun, 12 Jul 2020 23:45:31 +0900</pubDate>
             
-            <guid>http://www.katataku.dev/posts/aws-ssa/</guid>
+            <guid>http://www.katataku.dev/posts/2020/aws-ssa/</guid>
             <description>AWS 認定 Solution Architect associateに合格したので勉強したポイントを記録する。 インプット学習 まずは、有名な黒本をメルカリで購入した。正直あまり読んで</description>
             <content type="html"><![CDATA[<p>AWS 認定　Solution Architect associateに合格したので勉強したポイントを記録する。</p>
 <h2 id="インプット学習">インプット学習</h2>
@@ -45,10 +83,10 @@
         
         <item>
             <title>hugoで利用するスクリプトを作成した</title>
-            <link>http://www.katataku.dev/posts/hugo-scripts/</link>
+            <link>http://www.katataku.dev/posts/2020/hugo-scripts/</link>
             <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
             
-            <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
+            <guid>http://www.katataku.dev/posts/2020/hugo-scripts/</guid>
             <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
             <content type="html"><![CDATA[<p>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。</p>
 <h2 id="local-deploy">local deploy</h2>
@@ -80,10 +118,10 @@ git push origin master
         
         <item>
             <title>First Article</title>
-            <link>http://www.katataku.dev/posts/first-article/</link>
+            <link>http://www.katataku.dev/posts/2020/first-article/</link>
             <pubDate>Sat, 11 Jul 2020 23:49:00 +0900</pubDate>
             
-            <guid>http://www.katataku.dev/posts/first-article/</guid>
+            <guid>http://www.katataku.dev/posts/2020/first-article/</guid>
             <description>はじめての記事</description>
             <content type="html"><![CDATA[<p>はじめての記事</p>
 ]]></content>

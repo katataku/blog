@@ -13,10 +13,10 @@
     
     <item>
       <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://www.katataku.dev/posts/hugo-scripts/</link>
+      <link>http://www.katataku.dev/posts/2020/hugo-scripts/</link>
       <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
+      <guid>http://www.katataku.dev/posts/2020/hugo-scripts/</guid>
       <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
     </item>
     
