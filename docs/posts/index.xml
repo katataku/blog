@@ -5,13 +5,13 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Thu, 16 Jul 2020 15:51:29 +0900</lastBuildDate>
+        <lastBuildDate>Fri, 17 Jul 2020 15:51:29 +0900</lastBuildDate>
         <atom:link href="http://www.katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>初めてRFC読んでみた その2</title>
             <link>http://www.katataku.dev/posts/rfc6749-2/</link>
-            <pubDate>Thu, 16 Jul 2020 15:51:29 +0900</pubDate>
+            <pubDate>Fri, 17 Jul 2020 15:51:29 +0900</pubDate>
             
             <guid>http://www.katataku.dev/posts/rfc6749-2/</guid>
             <description>引き続き読み進めていく。 RFCらしい文体が目立ってきた。 2.クライアント登録 クライアントは事前に認可サーバへの登録が必要。 2.1クライアント</description>
