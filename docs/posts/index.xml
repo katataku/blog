@@ -17,7 +17,7 @@
             <description>引き続き読み進めていく。 RFCらしい文体が目立ってきた。 2.クライアント登録 クライアントは事前に認可サーバへの登録が必要。 2.1クライアント</description>
             <content type="html"><![CDATA[<p>引き続き読み進めていく。
 RFCらしい文体が目立ってきた。</p>
-<h1 id="2クライアント登録">2.クライアント登録</h1>
+<h2 id="2クライアント登録">2.クライアント登録</h2>
 <p>クライアントは事前に認可サーバへの登録が必要。</p>
 <h2 id="21クライアントタイプ">2.1クライアントタイプ</h2>
 <p>2つのクライアントタイプがある。</p>
@@ -193,32 +193,32 @@ RFCらしい文体が目立ってきた。</p>
             <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
             
             <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
-            <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
-            <content type="html"><![CDATA[<p>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。</p>
+            <description>hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起</description>
+            <content type="html"><![CDATA[<p>hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。</p>
 <h2 id="local-deploy">local deploy</h2>
-<p>コンテンツを生成し、ローカル確認するためにサーバ を起動する。
+<p>コンテンツを生成し、ローカル確認するためにサーバーを起動する。
 こちらは単純。</p>
-<pre><code>hugo;
-hugo server -D 
-</code></pre><h2 id="deploy">deploy</h2>
-<p>確認した結果を、githubリポジトリにpushするためのスクリプト。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo;
+hugo server -D
+</code></pre></div><h2 id="deploy">deploy</h2>
+<p>確認した結果を、GitHubリポジトリにpushするためのスクリプト。
 全体の整合性を担保するために、リコンパイルを実施している。</p>
-<pre><code>#!/bin/sh
-
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
 hugo
 
 git add docs/
 
-msg=&quot;rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
 
 git push origin master
-</code></pre><p><a href="https://qiita.com/KoKeCross/items/2b24908f60d235bcc49f">こちら</a>を参考に作成した。</p>
+</code></pre></div><p><a href="https://qiita.com/KoKeCross/items/2b24908f60d235bcc49f">こちら</a>を参考に作成した。</p>
 ]]></content>
         </item>
         

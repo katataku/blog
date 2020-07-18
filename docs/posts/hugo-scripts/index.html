@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す" />
+<meta name="description" content="hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起" />
 <meta name="keywords" content=", hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -33,10 +33,10 @@
 
 
 <meta itemprop="name" content="hugoで利用するスクリプトを作成した">
-<meta itemprop="description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す">
+<meta itemprop="description" content="hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起">
 <meta itemprop="datePublished" content="2020-07-12T00:45:56&#43;09:00" />
 <meta itemprop="dateModified" content="2020-07-12T00:45:56&#43;09:00" />
-<meta itemprop="wordCount" content="191">
+<meta itemprop="wordCount" content="193">
 <meta itemprop="image" content="http://www.katataku.dev"/>
 
 
@@ -46,12 +46,12 @@
 <meta name="twitter:image" content="http://www.katataku.dev"/>
 
 <meta name="twitter:title" content="hugoで利用するスクリプトを作成した"/>
-<meta name="twitter:description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す"/>
+<meta name="twitter:description" content="hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起"/>
 
 
 
     <meta property="og:title" content="hugoで利用するスクリプトを作成した" />
-<meta property="og:description" content="hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す" />
+<meta property="og:description" content="hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.katataku.dev/posts/hugo-scripts/" />
 <meta property="og:image" content="http://www.katataku.dev"/>
@@ -143,31 +143,31 @@
       
 
       <div class="post-content">
-        <p>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。</p>
+        <p>hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。</p>
 <h2 id="local-deploy">local deploy</h2>
-<p>コンテンツを生成し、ローカル確認するためにサーバ を起動する。
+<p>コンテンツを生成し、ローカル確認するためにサーバーを起動する。
 こちらは単純。</p>
-<pre><code>hugo;
-hugo server -D 
-</code></pre><h2 id="deploy">deploy</h2>
-<p>確認した結果を、githubリポジトリにpushするためのスクリプト。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo;
+hugo server -D
+</code></pre></div><h2 id="deploy">deploy</h2>
+<p>確認した結果を、GitHubリポジトリにpushするためのスクリプト。
 全体の整合性を担保するために、リコンパイルを実施している。</p>
-<pre><code>#!/bin/sh
-
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
 hugo
 
 git add docs/
 
-msg=&quot;rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
 
 git push origin master
-</code></pre><p><a href="https://qiita.com/KoKeCross/items/2b24908f60d235bcc49f">こちら</a>を参考に作成した。</p>
+</code></pre></div><p><a href="https://qiita.com/KoKeCross/items/2b24908f60d235bcc49f">こちら</a>を参考に作成した。</p>
 
       </div>
     </article>
@@ -190,7 +190,7 @@ git push origin master
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        191 Words
+        193 Words
       </p>
 
       <p>

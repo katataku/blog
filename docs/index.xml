@@ -44,7 +44,7 @@
       <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
       
       <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
-      <description>hugoをgithub pagesにデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバ を起動す</description>
+      <description>hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起</description>
     </item>
     
     <item>
