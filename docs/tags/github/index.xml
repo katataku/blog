@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/tags/hugo/</link>
-    <description>Recent content in hugo on katataku&#39;s blog</description>
+    <title>GitHub on katataku&#39;s blog</title>
+    <link>http://www.katataku.dev/tags/github/</link>
+    <description>Recent content in GitHub on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.katataku.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://www.katataku.dev/posts/hugo-cname/</guid>
       <description>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。 何がおきたか 事件の予兆は発生していた。 GitHubで独自ドメイン</description>
-    </item>
-    
-    <item>
-      <title>hugoで利用するスクリプトを作成した</title>
-      <link>http://www.katataku.dev/posts/hugo-scripts/</link>
-      <pubDate>Sun, 12 Jul 2020 00:45:56 +0900</pubDate>
-      
-      <guid>http://www.katataku.dev/posts/hugo-scripts/</guid>
-      <description>hugoをHitHub pagesへのデプロイする際に利用するスクリプトを作成した。 local deploy コンテンツを生成し、ローカル確認するためにサーバーを起</description>
     </item>
     
   </channel>

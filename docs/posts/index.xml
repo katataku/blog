@@ -5,8 +5,56 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Fri, 17 Jul 2020 15:51:29 +0900</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
         <atom:link href="http://www.katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Github Pagesで独自ドメインを設定したらhugoブログが壊れた</title>
+            <link>http://www.katataku.dev/posts/hugo-cname/</link>
+            <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
+            
+            <guid>http://www.katataku.dev/posts/hugo-cname/</guid>
+            <description>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。 何がおきたか 事件の予兆は発生していた。 GitHubで独自ドメイン</description>
+            <content type="html"><![CDATA[<p>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。</p>
+<h2 id="何がおきたか">何がおきたか</h2>
+<p>事件の予兆は発生していた。
+GitHubで独自ドメイン設定をした後git pushがうまくいかない。
+原因はGitHub側で生成されるファイル「CNAME」。</p>
+<p>CNAMEの内容としては設定している独自ドメインが記載されているだけ。
+上記のgit pushエラーに対してはgit pullを行うことで解消した。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin master
+</code></pre></div><p>git pullを経て無事git pushが成功した。</p>
+<h2 id="表示崩れが発生">表示崩れが発生</h2>
+<p>上記git pushの結果表示崩れが発生した。
+GitHub上の独自ドメイン設定を確認するとドメイン設定が消えている。
+gitのログを見るとCNAMEファイルの削除が発生していた。</p>
+<p>##　何が起きたか</p>
+<p>hugoコマンドでCNAMEが消されていた。
+詳細には、&ndash;cleanDestinationDirオプションをつけて、毎回不要ファイルの削除を行っている。
+この削除対象にCNAMEファイルが入っているようで、毎回削除された状態でGitHubにpushされていたようだった。</p>
+<h2 id="対策">対策</h2>
+<p>CNAMEファイルのマスターを退避し、毎回コピーするscriptに差し替えた。
+現状のdeploy用のスクリプトは以下の通り。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+
+hugo --cleanDestinationDir
+
+cp ./CNAME docs
+
+
+git add docs/
+
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+
+git push origin master
+</code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>初めてRFC読んでみた その2</title>
