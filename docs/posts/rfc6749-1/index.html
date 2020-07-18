@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="はじめに 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の入門書" />
+<meta name="description" content="RFCを読もう 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の" />
 <meta name="keywords" content=", RFC, RFC6749, 初心者, RFC読んでみた" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -33,10 +33,10 @@
 
 
 <meta itemprop="name" content="初めてRFC読んでみた その１">
-<meta itemprop="description" content="はじめに 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の入門書">
+<meta itemprop="description" content="RFCを読もう 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の">
 <meta itemprop="datePublished" content="2020-07-15T22:18:40&#43;09:00" />
 <meta itemprop="dateModified" content="2020-07-15T22:18:40&#43;09:00" />
-<meta itemprop="wordCount" content="1743">
+<meta itemprop="wordCount" content="1746">
 <meta itemprop="image" content="http://www.katataku.dev"/>
 
 
@@ -46,12 +46,12 @@
 <meta name="twitter:image" content="http://www.katataku.dev"/>
 
 <meta name="twitter:title" content="初めてRFC読んでみた その１"/>
-<meta name="twitter:description" content="はじめに 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の入門書"/>
+<meta name="twitter:description" content="RFCを読もう 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の"/>
 
 
 
     <meta property="og:title" content="初めてRFC読んでみた その１" />
-<meta property="og:description" content="はじめに 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の入門書" />
+<meta property="og:description" content="RFCを読もう 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.katataku.dev/posts/rfc6749-1/" />
 <meta property="og:image" content="http://www.katataku.dev"/>
@@ -71,6 +71,16 @@
 
 
 
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171024784-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171024784-2');
+</script>
 
     </head>
 
@@ -139,11 +149,31 @@
       <h1 class="post-title">
         <a href="http://www.katataku.dev/posts/rfc6749-1/">初めてRFC読んでみた その１</a>
       </h1>
+        <hr />
+        <aside id="toc">
+          <div class="toc-title">Table of Contents</div>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#rfcを読もう">RFCを読もう</a></li>
+    <li><a href="#1はじめに">1.はじめに</a>
+      <ul>
+        <li><a href="#11登場人物">1.1登場人物</a></li>
+        <li><a href="#12プロトコルフロー">1.2プロトコルフロー</a></li>
+        <li><a href="#13認可グラント">1.3認可グラント</a></li>
+        <li><a href="#14アクセストークン">1.4アクセストークン</a></li>
+        <li><a href="#15リフレッシュトークン">1.5リフレッシュトークン</a></li>
+        <li><a href="#1619">1.6〜1.9</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+        <hr />
 
       
 
       <div class="post-content">
-        <h2 id="はじめに">はじめに</h2>
+        <h2 id="rfcを読もう">RFCを読もう</h2>
 <p>業務でAPI GWの認証認可部分を担当することになった。
 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、
 「世の中の入門書は中級者向けだから、RFC読めばいいよ」という、ありがたいお言葉をいただいた。</p>
@@ -215,9 +245,9 @@
 <p>秘密の文字列。</p>
 <p>あらかじめクライアントと認可サーバの間で取り決めておく。
 認可範囲がクライアントの管理かである場合に使う。</p>
-<h2 id="14アクセストークン">1.4アクセストークン</h2>
+<h3 id="14アクセストークン">1.4アクセストークン</h3>
 <p>秘密の文字列。リソースへアクセスする際に使う。</p>
-<h2 id="15リフレッシュトークン">1.5リフレッシュトークン</h2>
+<h3 id="15リフレッシュトークン">1.5リフレッシュトークン</h3>
 <p>オプションの項目。
 期限が切れたアクセストークンの代わりに、新しいアクセストークンをもらうために利用することができる。</p>
 <p>アクセストークンの有効期限が切れるたび認可グラントを提示するのはセキュリティリスクが高まる。
@@ -262,7 +292,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        1743 Words
+        1746 Words
       </p>
 
       <p>
@@ -412,6 +442,7 @@
             <span>&copy; 2020</span>
             
             
+            <span><a href="/privacy-policy/index.html">プライバシーポリシー</a></span>
             <span> <a href="http://www.katataku.dev/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
