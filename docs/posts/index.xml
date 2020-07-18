@@ -14,9 +14,9 @@
             <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
             
             <guid>http://www.katataku.dev/posts/hugo-cname/</guid>
-            <description>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。 何がおきたか 事件の予兆は発生していた。 GitHubで独自ドメイン</description>
+            <description>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。 予兆 事件の予兆は発生していた。 GitHubで独自ドメイン設定をし</description>
             <content type="html"><![CDATA[<p>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。</p>
-<h2 id="何がおきたか">何がおきたか</h2>
+<h2 id="予兆">予兆</h2>
 <p>事件の予兆は発生していた。
 GitHubで独自ドメイン設定をした後git pushがうまくいかない。
 原因はGitHub側で生成されるファイル「CNAME」。</p>
@@ -28,7 +28,7 @@ GitHubで独自ドメイン設定をした後git pushがうまくいかない。
 <p>上記git pushの結果表示崩れが発生した。
 GitHub上の独自ドメイン設定を確認するとドメイン設定が消えている。
 gitのログを見るとCNAMEファイルの削除が発生していた。</p>
-<p>##　何が起きたか</p>
+<h2 id="何が起きたか">何が起きたか</h2>
 <p>hugoコマンドでCNAMEが消されていた。
 詳細には、&ndash;cleanDestinationDirオプションをつけて、毎回不要ファイルの削除を行っている。
 この削除対象にCNAMEファイルが入っているようで、毎回削除された状態でGitHubにpushされていたようだった。</p>
