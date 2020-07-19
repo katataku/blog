@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.katataku.dev/tags/google-search-console/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/tags/hugo/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/posts/sitemap-https/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/posts/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/tags/sitemap.xml/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.katataku.dev/tags/</loc>
+    <lastmod>2020-07-19T15:19:46+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.katataku.dev/privacy-policy/</loc>
     <lastmod>2020-07-18T11:27:46+09:00</lastmod>
   </url>
@@ -19,26 +54,6 @@
   
   <url>
     <loc>https://www.katataku.dev/posts/hugo-cname/</loc>
-    <lastmod>2020-07-18T10:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.katataku.dev/tags/hugo/</loc>
-    <lastmod>2020-07-18T10:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.katataku.dev/</loc>
-    <lastmod>2020-07-18T10:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.katataku.dev/posts/</loc>
-    <lastmod>2020-07-18T10:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.katataku.dev/tags/</loc>
     <lastmod>2020-07-18T10:06:54+09:00</lastmod>
   </url>
   

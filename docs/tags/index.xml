@@ -6,10 +6,37 @@
     <description>Recent content in Tags on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 15:19:46 +0900</lastBuildDate>
     
 	<atom:link href="https://www.katataku.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>google search console</title>
+      <link>https://www.katataku.dev/tags/google-search-console/</link>
+      <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
+      
+      <guid>https://www.katataku.dev/tags/google-search-console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.katataku.dev/tags/hugo/</link>
+      <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
+      
+      <guid>https://www.katataku.dev/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sitemap.xml</title>
+      <link>https://www.katataku.dev/tags/sitemap.xml/</link>
+      <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
+      
+      <guid>https://www.katataku.dev/tags/sitemap.xml/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GitHub</title>
@@ -26,15 +53,6 @@
       <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
       
       <guid>https://www.katataku.dev/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://www.katataku.dev/tags/hugo/</link>
-      <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
-      
-      <guid>https://www.katataku.dev/tags/hugo/</guid>
       <description></description>
     </item>
     

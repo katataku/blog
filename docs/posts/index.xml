@@ -5,8 +5,34 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jul 2020 15:19:46 +0900</lastBuildDate>
         <atom:link href="https://www.katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>hugoで作成したサイトマップの内容がGoogle Search Consoleでインデックス登録されていなかった</title>
+            <link>https://www.katataku.dev/posts/sitemap-https/</link>
+            <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
+            
+            <guid>https://www.katataku.dev/posts/sitemap-https/</guid>
+            <description>背景 サーチコンソール上で、新規追加した投稿のURL検査を実施したところ以下の表示がされていた。 サイトマップ 該当なし hugoで自動生成されたサ</description>
+            <content type="html"><![CDATA[<h2 id="背景">背景</h2>
+<p>サーチコンソール上で、新規追加した投稿のURL検査を実施したところ以下の表示がされていた。</p>
+<pre><code class="language-sitemap" data-lang="sitemap">サイトマップ　該当なし
+</code></pre><p>hugoで自動生成されたサイトマップを登録しているので、原因を調査した。</p>
+<h2 id="sitemapxmlの確認">sitemap.xmlの確認</h2>
+<p>自動生成されるsitemap.xmlの中身を実際に見てみて、原因を確認する。
+自動生成されるURLは以下の通り。</p>
+<pre><code class="language-url" data-lang="url">https://www.katataku.dev/sitemap.xml
+</code></pre><p>内容を見てみると、すべてhttpから始まるURLになっていた。</p>
+<h2 id="baseurlの誤り">baseURLの誤り</h2>
+<p>config.tomlの指定を確認する。
+baseURLの指定がhttpsではなく、httpになっていることが判明。
+以下の通り修正。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://www.katataku.dev&#34;</span>
+</code></pre></div><p>修正した結果サイトマップの内容はhttpsに変更されていた。
+数日後サーチコンソールの画面上インデックスの状況を再確認する。</p>
+]]></content>
+        </item>
         
         <item>
             <title>Github Pagesで独自ドメインを設定したらhugoブログが壊れた</title>
