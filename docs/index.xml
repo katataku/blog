@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Privacy Policy</title>
+      <link>http://www.katataku.dev/privacy-policy/</link>
+      <pubDate>Sat, 18 Jul 2020 11:27:46 +0900</pubDate>
+      
+      <guid>http://www.katataku.dev/privacy-policy/</guid>
+      <description>広告の配信について 当サイトは第三者配信の広告サービス「Google Adsense（グーグルアドセンス）」を利用しています。 広告配信事業者は、</description>
+    </item>
+    
+    <item>
       <title>Github Pagesで独自ドメインを設定したらhugoブログが壊れた</title>
       <link>http://www.katataku.dev/posts/hugo-cname/</link>
       <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
