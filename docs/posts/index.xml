@@ -31,6 +31,15 @@ baseURLの指定がhttpsではなく、httpになっていることが判明。
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://www.katataku.dev&#34;</span>
 </code></pre></div><p>修正した結果サイトマップの内容はhttpsに変更されていた。
 数日後サーチコンソールの画面上インデックスの状況を再確認する。</p>
+<h2 id="考察">考察</h2>
+<p>baseURLのプロトコルが誤っていても、閲覧する上で問題は検知できない。
+理由は以下二点。</p>
+<ul>
+<li>localで確認する際にはhttp化される。</li>
+<li>GitHub上ではhttpsにリダイレクトされる。</li>
+</ul>
+<p>GitHubの仕組みは知っていたが、上記は知らなかった。
+hugo賢い。</p>
 ]]></content>
         </item>
         
