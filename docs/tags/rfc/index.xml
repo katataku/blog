@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RFC on katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/tags/rfc/</link>
+    <link>https://www.katataku.dev/tags/rfc/</link>
     <description>Recent content in RFC on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Fri, 17 Jul 2020 15:51:29 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/tags/rfc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.katataku.dev/tags/rfc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>初めてRFC読んでみた その2</title>
-      <link>http://www.katataku.dev/posts/rfc6749-2/</link>
+      <link>https://www.katataku.dev/posts/rfc6749-2/</link>
       <pubDate>Fri, 17 Jul 2020 15:51:29 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/posts/rfc6749-2/</guid>
+      <guid>https://www.katataku.dev/posts/rfc6749-2/</guid>
       <description>はじめに 引き続き読み進めていく。 RFCらしい文体が目立ってきた。 2.クライアント登録 クライアントは事前に認可サーバへの登録が必要。 2.1クラ</description>
     </item>
     
     <item>
       <title>初めてRFC読んでみた その１</title>
-      <link>http://www.katataku.dev/posts/rfc6749-1/</link>
+      <link>https://www.katataku.dev/posts/rfc6749-1/</link>
       <pubDate>Wed, 15 Jul 2020 22:18:40 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/posts/rfc6749-1/</guid>
+      <guid>https://www.katataku.dev/posts/rfc6749-1/</guid>
       <description>RFCを読もう 業務でAPI GWの認証認可部分を担当することになった。 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、 「世の中の</description>
     </item>
     

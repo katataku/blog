@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on katataku&#39;s blog</title>
-    <link>http://www.katataku.dev/tags/github/</link>
+    <link>https://www.katataku.dev/tags/github/</link>
     <description>Recent content in GitHub on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
     <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
     
-	<atom:link href="http://www.katataku.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.katataku.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Github Pagesで独自ドメインを設定したらhugoブログが壊れた</title>
-      <link>http://www.katataku.dev/posts/hugo-cname/</link>
+      <link>https://www.katataku.dev/posts/hugo-cname/</link>
       <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
       
-      <guid>http://www.katataku.dev/posts/hugo-cname/</guid>
+      <guid>https://www.katataku.dev/posts/hugo-cname/</guid>
       <description>独自ドメインを導入したら、ブログの表示崩れが発生したので原因と対策を調べた。 予兆 事件の予兆は発生していた。 GitHubで独自ドメイン設定をし</description>
     </item>
     
