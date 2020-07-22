@@ -6,10 +6,37 @@
     <description>Recent content in Tags on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Sun, 19 Jul 2020 15:19:46 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 22:19:09 +0900</lastBuildDate>
     
 	<atom:link href="https://katataku.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://katataku.dev/tags/github/</link>
+      <pubDate>Wed, 22 Jul 2020 22:19:09 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub pages</title>
+      <link>https://katataku.dev/tags/github-pages/</link>
+      <pubDate>Wed, 22 Jul 2020 22:19:09 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://katataku.dev/tags/hugo/</link>
+      <pubDate>Wed, 22 Jul 2020 22:19:09 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>google search console</title>
@@ -21,38 +48,11 @@
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://katataku.dev/tags/hugo/</link>
-      <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
-      
-      <guid>https://katataku.dev/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sitemap.xml</title>
       <link>https://katataku.dev/tags/sitemap.xml/</link>
       <pubDate>Sun, 19 Jul 2020 15:19:46 +0900</pubDate>
       
       <guid>https://katataku.dev/tags/sitemap.xml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://katataku.dev/tags/github/</link>
-      <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
-      
-      <guid>https://katataku.dev/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub pages</title>
-      <link>https://katataku.dev/tags/github-pages/</link>
-      <pubDate>Sat, 18 Jul 2020 10:06:54 +0900</pubDate>
-      
-      <guid>https://katataku.dev/tags/github-pages/</guid>
       <description></description>
     </item>
     

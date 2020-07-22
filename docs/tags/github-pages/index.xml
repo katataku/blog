@@ -6,10 +6,19 @@
     <description>Recent content in GitHub pages on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Sat, 18 Jul 2020 10:06:54 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 22:19:09 +0900</lastBuildDate>
     
 	<atom:link href="https://katataku.dev/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub pagesのブログのURLをwwwありからwwwなしに変更した</title>
+      <link>https://katataku.dev/posts/url-www/</link>
+      <pubDate>Wed, 22 Jul 2020 22:19:09 +0900</pubDate>
+      
+      <guid>https://katataku.dev/posts/url-www/</guid>
+      <description>背景 google adsenseの登録をした。 はじめてのドメインの際は、サブドメイン（wwwあり）は不可とのことで、ブログURLを変更することにした。 検</description>
+    </item>
     
     <item>
       <title>Github Pagesで独自ドメインを設定したらhugoブログが壊れた</title>
