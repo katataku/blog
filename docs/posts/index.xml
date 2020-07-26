@@ -5,8 +5,85 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Wed, 22 Jul 2020 22:19:09 +0900</lastBuildDate>
+        <lastBuildDate>Sun, 26 Jul 2020 10:39:39 +0900</lastBuildDate>
         <atom:link href="https://katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>競技プログラミングの準備をしてみた。</title>
+            <link>https://katataku.dev/posts/atcoder-kitting/</link>
+            <pubDate>Sun, 26 Jul 2020 10:39:39 +0900</pubDate>
+            
+            <guid>https://katataku.dev/posts/atcoder-kitting/</guid>
+            <description>はじめてatcoderのコンテストに 参加してみた。 「競技プログラミングの準備」と調べてみると、アルゴリズムの勉強手法だとか、動作環境のセット</description>
+            <content type="html"><![CDATA[<p>はじめてatcoderのコンテストに
+参加してみた。</p>
+<p>「競技プログラミングの準備」と調べてみると、アルゴリズムの勉強手法だとか、動作環境のセットアップ手法の解説しか出てこなかった。
+ここでは、実際どうやって実行するのか、どういう流れで提出するのか、そのために何を準備するのかを記載する。</p>
+<p>大きな流れは以下の通り。</p>
+<ol>
+<li>例を利用したテストケースの準備</li>
+<li>コーディング</li>
+<li>実行＆自動テスト</li>
+<li>提出</li>
+</ol>
+<h2 id="例を利用したテストケースの準備">例を利用したテストケースの準備</h2>
+<p>問題には入力と出力の例が用意されている。
+その内容を利用して自動テストを実行できるようにする。</p>
+<p>今回のスクリプトでは「input」「answer」というフォルダーに同名のファイルに、入出力を記載する。</p>
+<figure>
+    <img src="/atcoder-script.jpeg"/> <figcaption>
+            <h4>フォルダー構成</h4>
+        </figcaption>
+</figure>
+
+<p>inputフォルダーにある入力例に対して、テストを実施する。</p>
+<h2 id="コーディング">コーディング</h2>
+<p>main.pyというファイル名でコーディングを行う。
+内容は全量コピペで提出できる内容とする。</p>
+<h2 id="実行自動テスト">実行＆自動テスト</h2>
+<p>ここが本題。
+やりたいことは、「テストケースを用いた実行＆回答例との一致判定」。</p>
+<p>以下のスクリプトを用意し、毎回実行するようにした。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>rm output/*
+
+dirpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./input&#34;</span>
+files<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>ls $dirpath<span style="color:#e6db74">`</span>
+
+pfinrf <span style="color:#e6db74">&#34;\n&#34;</span>
+<span style="color:#66d9ef">for</span> file in $files;
+<span style="color:#66d9ef">do</span>
+    printf <span style="color:#e6db74">&#34;=====</span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">=======\n&#34;</span>
+
+    input<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    output<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    answer<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+
+    python main.py &lt;input/<span style="color:#e6db74">${</span>input<span style="color:#e6db74">}</span> | tee output/<span style="color:#e6db74">${</span>output<span style="color:#e6db74">}</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -e answer/<span style="color:#e6db74">${</span>answer<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+        diff -u output/<span style="color:#e6db74">${</span>output<span style="color:#e6db74">}</span> answer/<span style="color:#e6db74">${</span>answer<span style="color:#e6db74">}</span> &gt;tmp
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $? -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+            printf <span style="color:#e6db74">&#34;\nCA\n&#34;</span>
+        <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> $? -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+            printf <span style="color:#e6db74">&#34;\n--- diff output answer --------------------\n&#34;</span>
+            cat tmp
+            printf <span style="color:#e6db74">&#34;\nWA\n&#34;</span>
+        <span style="color:#66d9ef">fi</span>
+        rm tmp
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><p>入力例が複数あっても、回答フォルダーに同名のファイルがあればテストできる。</p>
+<p>以下のコマンドで実行を行う。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./run.sh
+</code></pre></div><h2 id="今後の課題">今後の課題</h2>
+<ul>
+<li>典型的な入力処理のテンプレート化</li>
+<li>入出力例の取得自動化</li>
+</ul>
+<p>問題サイトをスクレイピングすれば、入出力例を自動で取得できる気がする。</p>
+]]></content>
+        </item>
         
         <item>
             <title>GitHub pagesのブログのURLをwwwありからwwwなしに変更した</title>
@@ -171,7 +248,7 @@ RFCらしい文体が目立ってきた。</p>
             <content type="html"><![CDATA[<h2 id="rfcを読もう">RFCを読もう</h2>
 <p>業務でAPI GWの認証認可部分を担当することになった。
 引継ぎ元となる先輩に認証認可の入門書のオススメを聞いたところ、
-「世の中の入門書は中級者向けだから、RFC読めばいいよ」という、ありがたいお言葉をいただいた。</p>
+「世の中の入門書は中級者向けだから、RFC読めばいいよ」という、お言葉をいただいた。</p>
 <p>そこで、はじめてRFCを読むわけだが、
 人目見ただけで分量に嫌気が差した。</p>
 <p>世の中には簡単に説明している記事はあるが、読みたいのはあくまでRFC。
