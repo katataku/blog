@@ -5,8 +5,58 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Sun, 26 Jul 2020 10:39:39 +0900</lastBuildDate>
+        <lastBuildDate>Sun, 01 Nov 2020 20:30:55 +0900</lastBuildDate>
         <atom:link href="https://katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Python Division</title>
+            <link>https://katataku.dev/posts/python-division/</link>
+            <pubDate>Sun, 01 Nov 2020 20:30:55 +0900</pubDate>
+            
+            <guid>https://katataku.dev/posts/python-division/</guid>
+            <description>pythonの割り算は大きく2種類存在する。&amp;quot;/&amp;ldquo;と&amp;rdquo;//&amp;ldquo;である。 違いについて、混乱し、検索</description>
+            <content type="html"><![CDATA[<p>pythonの割り算は大きく2種類存在する。&quot;/&ldquo;と&rdquo;//&ldquo;である。
+違いについて、混乱し、検索しても納得がいかなかったので実機で動作を確認した。</p>
+<h1 id="定義">定義</h1>
+<h2 id="演算子">/演算子</h2>
+<p>こちらが通常の割り算。結果はfloat型（不動小数点型）。pythonの不動小数点型も他の言語と同様に2の補数表現として表されている。</p>
+<h2 id="演算子-1">//演算子</h2>
+<p>こちらは商を求める演算。結果はint型（整数型）。あくまで、整数の範囲で割り算を行い、商を返す。</p>
+<h2 id="intによるキャスト">int()によるキャスト</h2>
+<p>int()はfloat型→int型への型キャスト演算である。
+int()は少数部の切り捨て演算にあたる。
+int(3.5)→3</p>
+<h1 id="考察">考察</h1>
+<p>ここで気になるのがint()と/演算子との組み合わせである。
+数学的には、a//bとint(a/b)は同一の結果となる。</p>
+<p>しかし実装上は異なる。
+具体例を見てみる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> int(input())
+<span style="color:#75715e"># 987654321</span>
+
+
+sum_a1 <span style="color:#f92672">=</span> int(a <span style="color:#f92672">*</span> (a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">998244353</span>
+sum_a2 <span style="color:#f92672">=</span> int(a <span style="color:#f92672">*</span> (a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">998244353</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;sum_a1 : {}&#34;</span><span style="color:#f92672">.</span>format(sum_a1))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;sum_a2 : {}&#34;</span><span style="color:#f92672">.</span>format(sum_a2))
+<span style="color:#75715e">#sum_a1 : 3544418</span>
+<span style="color:#75715e">#sum_a2 : 3544427</span>
+
+
+sum_b1 <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> (a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+sum_b2 <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> (a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;sum_b1 : {}&#34;</span><span style="color:#f92672">.</span>format(sum_b1))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;sum_b2 : {}&#34;</span><span style="color:#f92672">.</span>format(sum_b2))
+<span style="color:#75715e">#sum_b1 : 4.877305293888127e+17</span>
+<span style="color:#75715e">#sum_b2 : 487730529388812681</span>
+
+</code></pre></div><p>理由は、一度float型で読み取ると誤差が生じるためである。
+誤差のある数字どうしを掛け算して桁の大きな数字にすると、誤差が大きくなり、切り捨て演算の結果が変わることになる。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>不必要にfloatが発生しないようにするべし。
+Decimal型を使っても安全かも。</p>
+]]></content>
+        </item>
         
         <item>
             <title>競技プログラミングの準備をしてみた。</title>
