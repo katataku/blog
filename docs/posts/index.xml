@@ -5,8 +5,84 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Sun, 01 Nov 2020 20:30:55 +0900</lastBuildDate>
+        <lastBuildDate>Sun, 31 Jan 2021 16:36:33 +0900</lastBuildDate>
         <atom:link href="https://katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Netdataをubuntu(on docker)にInstallしてみた</title>
+            <link>https://katataku.dev/posts/netdata-install-on-ubuntu/</link>
+            <pubDate>Sun, 31 Jan 2021 16:36:33 +0900</pubDate>
+            
+            <guid>https://katataku.dev/posts/netdata-install-on-ubuntu/</guid>
+            <description>会社でnetdataの紹介をされたので、インストールと動作確認をしてみた。 ググった情報だとエラーになったため、補足も行う。 動作環境 MacBook Air (Retina, 13-inch, 2020)</description>
+            <content type="html"><![CDATA[<p>会社でnetdataの紹介をされたので、インストールと動作確認をしてみた。
+ググった情報だとエラーになったため、補足も行う。</p>
+<h2 id="動作環境">動作環境</h2>
+<ul>
+<li>MacBook Air (Retina, 13-inch, 2020)</li>
+<li>Mac OS Big Sur 11.1</li>
+<li>Docker Engine v20.10.2</li>
+<li>Ubuntu(Docker image) f63181f19b2f</li>
+</ul>
+<h2 id="やったこと">やったこと</h2>
+<h3 id="事前準備">事前準備</h3>
+<p>ubuntuの起動</p>
+<pre><code>docker run -it -p 8080:19999 ubuntu bash
+</code></pre><p>以下のコマンドで事前準備を実施。</p>
+<pre><code>apt-get update
+apt-get install zlib1g-dev gcc make git autoconf autogen automake pkg-config
+apt-get install uuid-dev
+</code></pre><p>途中で対話的な設定が必要。
+選択肢が表示されるので、数字を入れてEnter.</p>
+<h3 id="インストールと実行">インストールと実行</h3>
+<p>以下コマンドを実行</p>
+<pre><code>git clone https://github.com/firehol/netdata.git --depth=1
+cd netdata
+./netdata-installer.sh
+</code></pre><p>以下の文言が表示されていれば、OK</p>
+<pre><code>
+ --- We are done! ---
+
+  ^
+  |.-.   .-.   .-.   .-.   .-.   .  netdata                          .-.   .-
+  |   '-'   '-'   '-'   '-'   '-'   is installed and running now!  -'   '-'
+  +----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+---&gt;
+</code></pre><p>mac上のブラウザから http://localhost:8080 にアクセスするとnetdataの画面が見れる。
+とてもスッキリと情報がまとまっており、美しい。</p>
+<h3 id="トラブルシュート">トラブルシュート</h3>
+<p>インストール時に、以下のエラーが出た場合について。</p>
+<pre><code>Sorry! netdata failed to build...
+
+You may need to check these:
+
+1. The package uuid-dev (or libuuid-devel) has to be installed.
+
+   If your system cannot find libuuid, although it is installed
+   run me with the option:  --libs-are-really-here
+
+2. The package zlib1g-dev (or zlib-devel) has to be installed.
+
+   If your system cannot find zlib, although it is installed
+   run me with the option:  --libs-are-really-here
+
+3. You need basic build tools installed, like:
+
+   gcc make autoconf automake pkg-config
+
+   Autoconf version 2.60 or higher is required.
+
+If you still cannot get it to build, ask for help at github:
+
+   https://github.com/netdata/netdata/issues
+</code></pre><p>上記のエラーが出た場合は、以下のコマンドで追加のインストールを行うことで、うまく行った。</p>
+<pre><code>apt install libuv1-dev
+</code></pre><h2 id="参考文献">参考文献</h2>
+<p>以下のサイトを参考にした。
+環境の違いなのか、バージョンの違いなのか、記載のままだとうまくいかった。</p>
+<p><a href="http://mezina1942.hatenablog.com/entry/2017/11/04/003606">http://mezina1942.hatenablog.com/entry/2017/11/04/003606</a></p>
+<p><a href="https://github.com/netdata/netdata/issues/7919">https://github.com/netdata/netdata/issues/7919</a></p>
+]]></content>
+        </item>
         
         <item>
             <title>Python Division</title>

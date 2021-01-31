@@ -5,10 +5,6 @@
     <link>https://katataku.dev/series/</link>
     <description>Recent content in Series on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>jp-JP</language>
-    
-	<atom:link href="https://katataku.dev/series/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>jp-JP</language><atom:link href="https://katataku.dev/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

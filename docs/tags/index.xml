@@ -6,10 +6,33 @@
     <description>Recent content in Tags on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Sun, 01 Nov 2020 20:30:55 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 16:36:33 +0900</lastBuildDate><atom:link href="https://katataku.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://katataku.dev/tags/docker/</link>
+      <pubDate>Sun, 31 Jan 2021 16:36:33 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/docker/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://katataku.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>netdata</title>
+      <link>https://katataku.dev/tags/netdata/</link>
+      <pubDate>Sun, 31 Jan 2021 16:36:33 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/netdata/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>ubuntu</title>
+      <link>https://katataku.dev/tags/ubuntu/</link>
+      <pubDate>Sun, 31 Jan 2021 16:36:33 +0900</pubDate>
+      
+      <guid>https://katataku.dev/tags/ubuntu/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python</title>
