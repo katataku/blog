@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>AWS SAP受験記</title>
+      <link>https://katataku.dev/posts/aws-sap/</link>
+      <pubDate>Mon, 11 Jan 2021 23:45:31 +0900</pubDate>
+      
+      <guid>https://katataku.dev/posts/aws-sap/</guid>
+      <description>AWS認定 Solution Architect Professionalに合格したので勉強したポイントを記録する。 インプット学習 AWSの公式動画、「Exam Readiness: AWS Certified Solutions Architect – Pro</description>
+    </item>
+    
+    <item>
       <title>Python Division</title>
       <link>https://katataku.dev/posts/python-division/</link>
       <pubDate>Sun, 01 Nov 2020 20:30:55 +0900</pubDate>

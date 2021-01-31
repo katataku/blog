@@ -85,6 +85,42 @@ If you still cannot get it to build, ask for help at github:
         </item>
         
         <item>
+            <title>AWS SAP受験記</title>
+            <link>https://katataku.dev/posts/aws-sap/</link>
+            <pubDate>Mon, 11 Jan 2021 23:45:31 +0900</pubDate>
+            
+            <guid>https://katataku.dev/posts/aws-sap/</guid>
+            <description>AWS認定 Solution Architect Professionalに合格したので勉強したポイントを記録する。 インプット学習 AWSの公式動画、「Exam Readiness: AWS Certified Solutions Architect – Pro</description>
+            <content type="html"><![CDATA[<p>AWS認定　Solution Architect Professionalに合格したので勉強したポイントを記録する。</p>
+<h2 id="インプット学習">インプット学習</h2>
+<p>AWSの公式動画、「Exam Readiness: AWS Certified Solutions Architect – Professional」を観た。
+この際に、不明な用語を全てメモしておく。</p>
+<p>その後、メモをもとに、blackbeltオンラインセミナーを順番に観ていく。</p>
+<h2 id="アウトプット学習">アウトプット学習</h2>
+<p>udemyの試験対策講座を受講した。
+「問題を解く」→「間違った分野のblackbeltセミナーや公式documentを見返す」ということを繰り返す。（本来は2-3回やりたかったが、1回しかできてない。。）</p>
+<p>申し込み前には、公式の模試を受験した。6割の正答率だったので、気合を入れ直した。</p>
+<h2 id="試験当日">試験当日</h2>
+<p>自宅から最寄りの試験会場を選択した。
+SAAとは違い、当日の勉強はやらないことにした。</p>
+<h2 id="つまづきポイント">つまづきポイント</h2>
+<p>自分がつまずいたポイントは以下の通り。</p>
+<h3 id="direct-connect">Direct Connect</h3>
+<p>頻出分野だが、実際に扱う機会が少ない。（ほぼない）</p>
+<p>2-3回Blackbelt恩来セミナーをみてイメージを膨らませた。</p>
+<h3 id="データベースまわり">データベースまわり</h3>
+<p>概念が混乱するので、整理が必要。</p>
+<ul>
+<li>RDSとAuroraでリードレプリカがどう異なるのか。AZ障害時に、どういう動きになるのか。</li>
+<li>高速化手法は何があるのか。</li>
+<li>リージョン障害時の影響は何か。リージョンまたぎのレプリケーションはどうする？
+など。</li>
+</ul>
+<p>本来はSAAレベルでも理解すべきDAX周りの理解も甘かったので、復習になった。</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Python Division</title>
             <link>https://katataku.dev/posts/python-division/</link>
             <pubDate>Sun, 01 Nov 2020 20:30:55 +0900</pubDate>
