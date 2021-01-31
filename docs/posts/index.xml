@@ -14,8 +14,8 @@
             <pubDate>Sun, 31 Jan 2021 16:36:33 +0900</pubDate>
             
             <guid>https://katataku.dev/posts/netdata-install-on-ubuntu/</guid>
-            <description>会社でnetdataの紹介をされたので、インストールと動作確認をしてみた。 ググった情報だとエラーになったため、補足も行う。 動作環境 MacBook Air (Retina, 13-inch, 2020)</description>
-            <content type="html"><![CDATA[<p>会社でnetdataの紹介をされたので、インストールと動作確認をしてみた。
+            <description>会社でNetdataの紹介をされたので、インストールと動作確認をしてみた。 ググった情報だとエラーになったため、補足も行う。 動作環境 MacBook Air (Retina, 13-inch, 2020)</description>
+            <content type="html"><![CDATA[<p>会社でNetdataの紹介をされたので、インストールと動作確認をしてみた。
 ググった情報だとエラーになったため、補足も行う。</p>
 <h2 id="動作環境">動作環境</h2>
 <ul>
