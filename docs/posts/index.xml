@@ -5,8 +5,48 @@
         <description>Recent content in Posts on katataku&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp-JP</language>
-        <lastBuildDate>Sun, 31 Jan 2021 16:36:33 +0900</lastBuildDate>
+        <lastBuildDate>Wed, 03 Feb 2021 15:13:31 +0900</lastBuildDate>
         <atom:link href="https://katataku.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>4人目のレンガ職人</title>
+            <link>https://katataku.dev/posts/bricks/</link>
+            <pubDate>Wed, 03 Feb 2021 15:13:31 +0900</pubDate>
+            
+            <guid>https://katataku.dev/posts/bricks/</guid>
+            <description>3人のレンガ職人という寓話がある。 https://www.total-engagement.jp/808/ とても違和感があるので、4人目を追加したい。 もう少し歩くと、別の男がレンガを積んでいるのに出くわした。 「</description>
+            <content type="html"><![CDATA[<p>3人のレンガ職人という寓話がある。
+<a href="https://www.total-engagement.jp/808/">https://www.total-engagement.jp/808/</a></p>
+<p>とても違和感があるので、4人目を追加したい。</p>
+<pre><code>もう少し歩くと、別の男がレンガを積んでいるのに出くわした。
+
+「ここでいったい何をしているのですか？」
+
+旅人は興味深く尋ねた。
+
+
+「レンガを積んでいるんだよ」
+
+「大変ですね」
+
+「大変だけどとても楽しいよ。
+このレンガは最新のもので、旧来のレンガに比べて20%頑丈なんだ。
+そしてこの積み方。最新の論文で提案された積み方で、それを試してしているのさ。
+やってみると課題があるようだから、仕事が終わったらblogに記事を投稿しようと思っているんだ。
+とても大変で忙しいけど、ワクワクが止まらないよ。」
+
+旅人は全く理解できなかったが、楽しそうなのでそっと放っておくことにした。
+
+</code></pre><p>要約するとこういうこと</p>
+<ul>
+<li>1番目のレンガ職人：「レンガ積みに決まっているだろ」→特に目的なし</li>
+<li>2番目のレンガ職人：「この仕事のおかげで俺は家族を養っていける」→生活費を稼ぐのが目的</li>
+<li>3番目のレンガ職人：「歴史に残る偉大な大聖堂を造っている」→後世に残る事業に加わり、世の中に貢献することが目的</li>
+<li>4番目のレンガ職人：「成果物に興味はないが、技術に興味がある」→手段が目的化しているが、幸せそう</li>
+</ul>
+<p>4人目の生き方も悪くはないと思う。</p>
+]]></content>
+        </item>
         
         <item>
             <title>Netdataをubuntu(on docker)にInstallしてみた</title>

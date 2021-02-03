@@ -6,7 +6,16 @@
     <description>Recent content on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Sun, 31 Jan 2021 16:36:33 +0900</lastBuildDate><atom:link href="https://katataku.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 15:13:31 +0900</lastBuildDate><atom:link href="https://katataku.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4人目のレンガ職人</title>
+      <link>https://katataku.dev/posts/bricks/</link>
+      <pubDate>Wed, 03 Feb 2021 15:13:31 +0900</pubDate>
+      
+      <guid>https://katataku.dev/posts/bricks/</guid>
+      <description>3人のレンガ職人という寓話がある。 https://www.total-engagement.jp/808/ とても違和感があるので、4人目を追加したい。 もう少し歩くと、別の男がレンガを積んでいるのに出くわした。 「</description>
+    </item>
+    
     <item>
       <title>Netdataをubuntu(on docker)にInstallしてみた</title>
       <link>https://katataku.dev/posts/netdata-install-on-ubuntu/</link>

@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://katataku.dev/tags/docker/</loc>
-    <lastmod>2021-01-31T16:36:33+09:00</lastmod>
+    <loc>https://katataku.dev/posts/bricks/</loc>
+    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://katataku.dev/</loc>
+    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katataku.dev/posts/</loc>
+    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katataku.dev/tags/</loc>
+    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katataku.dev/tags/%E5%AF%93%E8%A9%B1/</loc>
+    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katataku.dev/tags/docker/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
   </url>
   
@@ -19,16 +39,6 @@
   
   <url>
     <loc>https://katataku.dev/posts/netdata-install-on-ubuntu/</loc>
-    <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katataku.dev/posts/</loc>
-    <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katataku.dev/tags/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
   </url>
   
