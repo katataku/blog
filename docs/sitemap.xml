@@ -1,128 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://katataku.dev/posts/bricks/</loc>
-    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://katataku.dev/</loc>
-    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
+    <loc>https://katataku.dev/tags/poem/</loc>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
     <loc>https://katataku.dev/posts/</loc>
-    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
     <loc>https://katataku.dev/tags/</loc>
-    <lastmod>2021-02-03T15:13:31+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
     <loc>https://katataku.dev/tags/%E5%AF%93%E8%A9%B1/</loc>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
+    <loc>https://katataku.dev/posts/club/</loc>
+    <lastmod>2021-07-05T11:45:23+09:00</lastmod>
+  </url><url>
+    <loc>https://katataku.dev/posts/bricks/</loc>
     <lastmod>2021-02-03T15:13:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/tags/docker/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/tags/netdata/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/netdata-install-on-ubuntu/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/tags/ubuntu/</loc>
     <lastmod>2021-01-31T16:36:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/aws-sap/</loc>
     <lastmod>2021-01-11T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/tags/python/</loc>
     <lastmod>2020-11-01T20:30:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/python-division/</loc>
     <lastmod>2020-11-01T20:30:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/tags/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
     <lastmod>2020-11-01T20:30:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/atcoder-kitting/</loc>
     <lastmod>2020-07-26T10:39:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/url-www/</loc>
     <lastmod>2020-07-22T22:19:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/sitemap-https/</loc>
     <lastmod>2020-07-19T15:19:46+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/privacy-policy/</loc>
     <lastmod>2020-07-18T11:27:46+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/hugo-cname/</loc>
     <lastmod>2020-07-18T10:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/rfc6749-2/</loc>
     <lastmod>2020-07-17T15:51:29+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/rfc6749-1/</loc>
     <lastmod>2020-07-15T22:18:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/aws-ssa/</loc>
     <lastmod>2020-07-12T23:45:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/posts/hugo-scripts/</loc>
     <lastmod>2020-07-12T00:45:56+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/about/</loc>
     <lastmod>2020-07-11T23:50:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://katataku.dev/series/</loc>
   </url>
-  
 </urlset>

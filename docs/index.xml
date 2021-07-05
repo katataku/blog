@@ -6,7 +6,16 @@
     <description>Recent content on katataku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-JP</language>
-    <lastBuildDate>Wed, 03 Feb 2021 15:13:31 +0900</lastBuildDate><atom:link href="https://katataku.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 11:45:23 +0900</lastBuildDate><atom:link href="https://katataku.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>野球部とシステム開発</title>
+      <link>https://katataku.dev/posts/club/</link>
+      <pubDate>Mon, 05 Jul 2021 11:45:23 +0900</pubDate>
+      
+      <guid>https://katataku.dev/posts/club/</guid>
+      <description>仕事選びに悩むあなたに向けて 野球部 部活動で野球部に入部したとする。 求められるものはたくさんある。 選手として練習をしないといけない。 監督は戦術</description>
+    </item>
+    
     <item>
       <title>4人目のレンガ職人</title>
       <link>https://katataku.dev/posts/bricks/</link>
@@ -130,7 +139,7 @@
       <pubDate>Sat, 11 Jul 2020 23:50:05 +0900</pubDate>
       
       <guid>https://katataku.dev/about/</guid>
-      <description>情報系大学院で修士修了。 在学時ソフトウェアの数学的検証ツールを開発（奨学金返還免除）。 大手SIerに新卒入社し金融部門を担当。 個人投資家とし</description>
+      <description>情報系大学院を修士修了。 在学時ソフトウェアの数学的検証ツールを研究開発を行う。 研究成果が認められ、「特に優れた業績による返還免除」として、奨</description>
     </item>
     
   </channel>
